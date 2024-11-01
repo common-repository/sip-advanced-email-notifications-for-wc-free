@@ -1,0 +1,103 @@
+(function() {
+    tinymce.PluginManager.add('sip_aenwc_mce_button', function( editor, url ) {
+        editor.addButton( 'sip_aenwc_mce_button', {
+            text: tinyMCE_object.button_name,
+            icon: 'sip-mce-icon',
+            onclick: function() {
+                editor.windowManager.open( {
+                    title: tinyMCE_object.button_title,
+                    body: [
+                          {
+                            type   : 'listbox',
+                            name   : 'sip',
+                            label  : 'Shortcode',
+                            values : [
+                                      { text: 'Full name of customer', value: 'customer_name' },
+                                      { text: 'First name of the customer', value: 'customer_first_name' },
+                                      { text: 'Last name of the customer', value: 'customer_last_name' },
+                                      { text: 'Username of the customer', value: 'customer_username' },
+                                      { text: 'Email of the customer', value: 'customer_email' },
+                                      { text: 'Id of the customer', value: 'customer_id' },
+                                      { text: 'IP Address of the customer', value: 'customer_ip' },
+                                      { text: 'Download url of the downloadable products', value: 'download_url' },
+                                      { text: 'Downloadable products name', value: 'product_name' },
+                                      { text: 'Number of downloads remaining', value: 'downloads_remaining' },
+                                      { text: 'Downloads remaining times', value: 'access_expires' },
+                                      { text: 'The url of shop page of woocommerce', value: 'store_url' },
+                                      { text: 'The name of blog', value: 'store_name' },
+                                      { text: 'The order number', value: 'order_number' },
+                                      { text: 'Display details of the order received', value: 'order_details' },
+                                      { text: 'Order subtotal', value: 'order_subtotal' },
+                                      { text: 'Order total', value: 'order_total' },
+                                      { text: 'Order shipping total', value: 'order_shipping_total' },
+                                      { text: 'Order total tax', value: 'order_total_tax' },
+                                      { text: 'order total discount', value: 'order_total_discount' },
+                                      { text: 'The url of order view', value: 'order_url' },
+                                      { text: 'List of order item with link and name', value: 'order_items' },
+                                      { text: 'List of order item with name and thumbnail', value: 'order_items_with_thumbnail' },
+                                      { text: 'Currency name', value: 'order_currency' },
+                                      { text: 'The date of order created', value: 'order_date_created' },
+                                      { text: 'Current order status', value: 'order_status' },
+                                      { text: 'Total item in order', value: 'order_item_count' },
+                                      { text: 'Order key', value: 'order_key' },
+                                      { text: 'Id of customer', value: 'order_customer_id' },
+                                      { text: 'Billing first name', value: 'order_billing_first_name' },
+                                      { text: 'Billing last name', value: 'order_billing_last_name' },
+                                      { text: 'Billing company', value: 'order_billing_company' },
+                                      { text: 'Billing address 1', value: 'order_billing_address_1' },
+                                      { text: 'Billing address 2', value: 'order_billing_address_2' },
+                                      { text: 'Billing city', value: 'order_billing_city' },
+                                      { text: 'Billing state', value: 'order_billing_state' },
+                                      { text: 'Billing postcode', value: 'order_billing_postcode' },
+                                      { text: 'Billing country', value: 'order_billing_country' },
+                                      { text: 'Billing email', value: 'order_billing_email' },
+                                      { text: 'Billing phone', value: 'order_billing_phone' },
+                                      { text: 'Shipping first_name', value: 'order_shipping_first_name' },
+                                      { text: 'Shipping last name', value: 'order_shipping_last_name' },
+                                      { text: 'Shipping company', value: 'order_shipping_company' },
+                                      { text: 'Shipping address 1', value: 'order_shipping_address_1' },
+                                      { text: 'Shipping address 2', value: 'order_shipping_address_2' },
+                                      { text: 'Shipping city', value: 'order_shipping_city' },
+                                      { text: 'Shipping state', value: 'order_shipping_state' },
+                                      { text: 'Shipping postcode', value: 'order_shipping_postcode' },
+                                      { text: 'Shipping country', value: 'order_shipping_country' },
+                                      { text: 'Payment method code', value: 'order_payment_method' },
+                                      { text: 'Payment method title', value: 'order_payment_method_title' },
+                                      { text: 'Order transaction id', value: 'order_transaction_id' },
+                                      { text: 'Order ip address', value: 'order_customer_ip_address' },
+                                      { text: 'Order customer user agent', value: 'order_customer_user_agent' },
+                                      { text: 'Order created via', value: 'order_created_via' },
+                                      { text: 'Order customer note', value: 'order_customer_note' },
+                                      { text: 'Completed order date', value: 'order_date_completed' },
+                                      { text: 'Order paid date', value: 'order_date_paid' },
+                                      { text: 'Order address', value: 'order_address' },
+                                      { text: 'Order shipping address map url', value: 'order_shipping_address_map_url' },
+                                      { text: 'Order billing full name', value: 'order_billing_full_name' },
+                                      { text: 'Order shipping full name', value: 'order_shipping_full_name' },
+                                      { text: 'Order billing address', value: 'order_billing_address' },
+                                      { text: 'Order shipping address', value: 'order_shipping_address' },
+                                      { text: 'Order payment url', value: 'order_payment_url' },
+                                      { text: 'Order received url', value: 'order_received_url' },
+                                      { text: 'Cancel order url', value: 'cancel_order_url' },
+                                      { text: 'Order url', value: 'order_url' },
+                                      { text: 'Order used coupons', value: 'order_used_coupons' },
+                                      { text: 'Send Coupon code', value: 'coupon1.code' },
+                                      { text: 'Expiry date of copun', value: 'coupon1.expiry_date' },
+                                      { text: 'Tracking of the order (requires aftership plugin)', value: 'tracking' },
+                                      { text: 'Booking start date (requires WooCommerce Bookings plugin)', value: 'booking_start_date' },
+                                      { text: 'Booking start time (requires WooCommerce Bookings plugin)', value: 'booking_start_time' },
+                                      { text: 'Booking end date (requires WooCommerce Bookings plugin)', value: 'booking_end_date' },
+                                      { text: 'Booking end time (requires WooCommerce Bookings plugin)', value: 'booking_end_time' }
+                            ],
+                            value : 'customer_first_name' // Sets the default
+                        }
+                    ],
+                    onsubmit: function( e ) {
+                        editor.insertContent( '{{' + e.data.sip  + '}}');
+                    }
+                });
+            },
+        });
+    });
+ 
+})();

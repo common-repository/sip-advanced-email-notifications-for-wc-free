@@ -1,0 +1,71 @@
+.sip-tab-content, .sip-version {
+	background: #fff;
+	padding: 5px;
+}
+
+.sip-version {
+	margin-top: 5px;
+}
+
+.sip-tab-content tr td{
+    border: 1px solid #ccc;
+    padding: 10px 5px;
+}
+
+
+/* price table custom css started */
+.pro_plugin_feature_tab_wrapper .columns {
+    float: left;
+    width: 50%;
+    padding: 8px;
+  }
+  
+.pro_plugin_feature_tab_wrapper .price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+  
+.pro_plugin_feature_tab_wrapper .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  .pro_plugin_feature_tab_wrapper .price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+	font-weight: bold;
+  }
+  
+  .pro_plugin_feature_tab_wrapper .price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+	font-size: 18px;
+  }
+  
+  .pro_plugin_feature_tab_wrapper .price .grey {
+    background-color: #eee;
+    font-size: 20px;
+  }
+  
+  .pro_plugin_feature_tab_wrapper a.button,
+  .pro_plugin_feature_tab_wrapper a.button:hover {
+    background-color: #f05f28;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .pro_plugin_feature_tab_wrapper .columns {
+      width: 100%;
+    }
+  }
+/* price table custom css end */

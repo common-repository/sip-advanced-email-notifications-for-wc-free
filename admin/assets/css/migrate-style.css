@@ -1,0 +1,21 @@
+/* 
+	Migrate style tag csses
+*/
+
+.sip-container-wrapper-email .tablenav.top {
+    position: absolute;
+    width: 30%;
+    float: revert;
+    text-align: revert;
+    right: 28px;
+    top: 15px;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.alignleft.actions.bulkactions{ 
+	display: flex;
+    align-items: center; 
+}

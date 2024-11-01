@@ -1,0 +1,4 @@
+[submodule "refs/sip-dashboard"]
+	path = refs/sip-dashboard
+	url = https://hitesh_shopitpress@bitbucket.org/shopitpress/sip-dashboard.git
+	branch = master

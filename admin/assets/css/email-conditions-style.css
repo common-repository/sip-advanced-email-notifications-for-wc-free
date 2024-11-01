@@ -1,0 +1,126 @@
+#postbox-container-2 .postbox{
+	clear:both;
+	float:left;
+	min-width:255px;
+	width:100%;
+	padding:0!important;
+	box-shadow:none;
+	background:0 0;
+	border:none
+}
+#postbox-container-2 #poststuff .inside{
+	margin:0;
+	padding:0
+}
+.sip_conditions_meta_box{
+	position:relative;
+}
+.hover_bkgr_fricc{
+	margin: 0 auto;
+	max-width:1100px;
+	position:absolute;
+	right:0;
+	left:0;
+	font-size:16px;
+	z-index:99999;
+	background-color: #ddd;
+	padding: 5px 15px;
+	display: none;
+}
+.card-body.first-div{
+	padding:5px 20px
+}
+.sip_conditions_meta_box .row{
+	margin-right:-15px;
+	margin-left:-15px;
+}
+.card.tx-black.bg-light{
+	margin-bottom:0;
+}
+body.sip-email-body-tag #overlayWrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1000;
+}
+
+body.sip-email-body-tag #overlay {
+	opacity: 1;
+	will-change: opacity;
+	transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.5);
+	-webkit-tap-highlight-color: transparent;
+}
+
+.popupCloseButton {
+	background-color: #fff;
+	border: 3px solid #999;
+	border-radius: 50px;
+	cursor: pointer;
+	display: inline-block;
+	font-family: arial;
+	font-weight: bold;
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	font-size: 25px;
+	line-height: 25px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+}
+.popupCloseButton:hover {
+	background-color: #ccc;
+}
+
+/* Popup box BEGIN */
+.hover_bkgr_fricc{
+	background:rgba(0,0,0,.4);
+}
+.hover_bkgr_fricc .helper{
+	display:inline-block;
+	height:100%;
+	vertical-align:middle;
+}
+.hover_bkgr_fricc > div {
+	background-color: #fff;
+	box-shadow: 10px 10px 60px #555;
+	display: inline-block;
+	height: auto;
+	min-height: 100px;
+	vertical-align: middle;
+	position: relative;
+	border-radius: 8px;
+	padding: 15px 5%;
+}
+
+
+.sip_a_e_n_wc_coupon_pattern_field,
+.sip_a_e_n_wc_coupon_expiry_date_field,
+.sip_a_e_n_wc_coupon_type_field,
+.sip_a_e_n_wc_coupon_expiry_type_field,
+.sip_a_e_n_wc_coupon_amount_field,
+.sip_a_e_n_wc_coupon_Usage_limit_field,
+.sip_a_e_n_wc_coupon_Usage_limit_per_user_field,
+.sip_a_e_n_wc_coupon_Usage_limit_minimum_spend_field,
+.sip_a_e_n_wc_coupon_Usage_limit_maximum_spend_field,
+.sip_a_e_n_wc_coupon_exclude_sale_items_field,
+.sip_a_e_n_wc_coupon_products_field,
+.sip_a_e_n_wc_coupon_exclude_products_field,
+.sip_a_e_n_wc_coupon_product_categories_field,
+.sip_a_e_n_wc_coupon_exclude_categories_field,
+.sip_a_e_n_wc_coupon_email_restrictions_field,
+.sip_a_e_n_wc_coupon_apply_before_tax_field,
+.sip_a_e_n_wc_coupon_individual_use_field,
+.sip_a_e_n_wc_coupon_enable_freeshipping_field
+{
+	display:none;
+}
